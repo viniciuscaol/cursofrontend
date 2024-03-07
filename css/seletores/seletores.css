@@ -1,0 +1,38 @@
+.title-site{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    border: 2px solid blue;
+    color: aliceblue;
+}
+
+.menu{
+
+}
+
+*h1{
+    /* Evitar usar * */
+    background-color: rgb(143, 92, 25);
+}
+
+a[href="../index.html"]{
+    color: green;
+}
+
+.pai{
+    font-size: 60px;
+    filho{
+        font-size: 2em;
+    }
+}
+
+.before::before {
+    content: ">>";
+    color: red;
+}
+
+.after::after {
+    content: "<<";
+    color: red;
+}

@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head><title>Loja</title></head>
+    <head>
+        <title>Loja</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
     <body>
-        <table>
-            <tr>
-                <td><a href="index.html"><h3>Home</h3></a></td>
-                <td><a href="loja.html"><h3>Loja</h3></a></td>
-                <td><a href="sobre.html"><h3>Sobre</h3></a></td>
-            </tr>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="sobre.html">Sobre</a> |
+            <a href="../../index.html">Blog</a>
+        </nav>
         <h3>Loja</h3>
         
-        <table>
+        <table class="itens-loja">
             <style>
                 table, th, td {
                 border: 1px solid black;
@@ -28,7 +30,7 @@
                 <td>Acarajé Completo</td>
                 <td>
                     <figure>
-                        <img src="Acaraje.png" alt="">
+                        <img src="imgs/Acarajecompleta.png" alt="" width="150" height="120">
                         <figcaption>Acaraje Completa</figcaption>
                     </figure>
                 </td>
@@ -39,11 +41,33 @@
                 <td>Acarajé Simples</td>
                 <td>
                     <figure>
-                        <img src="Acaraje.png" alt="">
+                        <img src="imgs/acarajesimples.jpg" alt="" width="150" height="120">
                         <figcaption>Acaraje Simples</figcaption>
                     </figure>
                 </td>
                 <td>R$10,00</td>
+            </tr>
+            <tr>
+                <td>00003</td>
+                <td>Coca-Cola lata 350ml</td>
+                <td>
+                    <figure>
+                        <img src="imgs/Cocacola.jpg" alt="" width="150" height="120">
+                        <figcaption>Coca-Cola</figcaption>
+                    </figure>
+                </td>
+                <td>R$6,00</td>
+            </tr>
+            <tr>
+                <td>00004</td>
+                <td>Cerveja Heineken lata 350ml</td>
+                <td>
+                    <figure>
+                        <img src="imgs/heineken.png" alt="" width="150" height="120">
+                        <figcaption>Heineken</figcaption>
+                    </figure>
+                </td>
+                <td>R$8,00</td>
             </tr>
         </table>
     </body>
