@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    padding: 50px;
+    
+}
+
+footer ul {
+    display: flex;
+    margin-bottom: 25px;
+    /* pode usar tbm o gap: 5%; */
+}
+
+footer ul li {
+    margin-right: 10px;
+    
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+
+footer p {
+    color: black;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+footer ul li a img {
+    min-width: 4vh;
+    max-width: 4vh;
+}

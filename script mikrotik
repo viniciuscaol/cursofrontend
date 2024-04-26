@@ -1,0 +1,24 @@
+/
+/ip route remove [find comment~"!== ROTA FAILOVER"]
+/routing rule remove [find comment~"!=="]
+/system script remove [find name=FAILOVER]
+/system scheduler remove [find name="EXECUTAR SCRIPT DE FAILOVER"]
+/ip/vrf/remove [find comment~"!== VRF FAILOVER"]
+
+
+:foreach i in=[/ip route find dst-address=0.0.0.0/0 routing-table=main] do={   
+    :global gateway [/ip route get number=$i gateway]
+    :global comentario [/ip route get number=$i comment]
+    /ip/vrf/add interfaces=none name=("FAILOVER-" . $comentario) comment="!== VRF FAILOVER"
+    :delay 2
+    /ip route add gateway=$gateway routing-table=("FAILOVER-" . $comentario) comment=("!== ROTA FAILOVER | " . $comentario)
+    /routing rule add action=lookup-only-in-table comment=("!== FORCE TESTE DE FAILOVER | " . $comentario) disabled=no routing-mark=("FAILOVER-" . $comentario) table=("FAILOVER-" . $comentario)
+}
+
+/system scheduler
+add interval=30s name="EXECITAR SCRIPT DE FAILOVER" on-event
+ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
+start-time=startup
+
+/system script
+add dont-require-permissions=no name=FAILOVER owner=admin policy=

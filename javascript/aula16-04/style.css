@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+    
+}
+
+.conteudo h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 200vh;
+}
+
+html{
+    background: url(jGlzr.png) repeat-x 0 0 scroll;
+    background-color:#0C0C0C;
+    height:100%;
+    width:100%;
+}

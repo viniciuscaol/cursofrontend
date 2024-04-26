@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-width: 100vh;
+    min-height: 100vh;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 5%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 80hv;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+form label , form input {
+    margin-bottom: 2%;
+}
+
+form label {
+    align-self: start;
+}
+
+form input {
+    width: 100%;
+}
+
+.pessoas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    max-width: 100%;
+}
+
+.card_pessoa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: blanchedalmond;
+    max-width: 20hv;
+    max-height: 20hv;
+    min-width: 20hv;
+    min-height: 20hv;
+    overflow: scroll;
+    white-space: nowrap;
+    margin: 10px;
+}
