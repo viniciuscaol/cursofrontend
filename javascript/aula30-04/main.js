@@ -43,3 +43,8 @@ const criarSenha = () => {
 }
 
 btn.addEventListener('click',criarSenha);
+
+copy.addEventListener('click', () => {
+        senha.select();
+        document.execCommand('copy');
+});
