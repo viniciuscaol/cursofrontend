@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP Formulario</title>
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <form method="get" action=".">
+        <label for="cep">CEP:
+            <input type="text" name="cep" id="cep" onblur="pesquisarCep(this.value);"><br>
+        </label>
+        <label for="rua">Rua:
+            <input type="text" name="rua" id="rua"><br>
+        </label>
+        <label for="bairro">Bairro:
+            <input type="text" name="bairro" id="bairro"><br>
+        </label>
+        <label for="cidade">Cidade:
+            <input type="text" name="cidade" id="cidade"><br>
+        </label>
+        <label for="estado">Estado:
+            <input type="text" name="estado" id="estado"><br>
+        </label>
+        <label for="ibge">IBGE:
+            <input type="text" name="ibge" id="ibge"><br>
+        </label>
+    </form>
+    <button id="btn">teste</button>
+</body>
+</html>
